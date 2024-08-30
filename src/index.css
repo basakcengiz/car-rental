@@ -3,4 +3,24 @@
 @tailwind utilities;
 
 :root {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-color: #f6f8f9;
+  scroll-behavior: smooth !important;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+html::-webkit-scrollbar {
+  display: none !important;
+}
+
+.hideScroll {
+  scroll-behavior: smooth !important;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+.hideScroll::-webkit-scrollbar {
+  display: none !important;
 }

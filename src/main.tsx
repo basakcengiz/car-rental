@@ -11,6 +11,8 @@ import { persistStore } from 'redux-persist';
 import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 
+import './i18n/i18n.ts';
+
 createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
     <PersistGate persistor={persistor}>
