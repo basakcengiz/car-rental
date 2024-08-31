@@ -6,8 +6,8 @@ export const links: LinkType[] = [
     id: '#home'
   },
   {
-    name: 'CARS',
-    id: '#cars'
+    name: 'BOOK',
+    id: '#book'
   },
   {
     name: 'FAQ',

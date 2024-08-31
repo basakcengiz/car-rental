@@ -15,5 +15,10 @@
   "istSabiha": "S. Gökçen Havalimanı Ofisi",
   "ankAirport": "Ankara Havalimanı Ofisi",
   "izmAirport": "İzmir Havalimanı Ofisi",
-  "antAirport": "Antalya Havalimanı Ofisi"
+  "antAirport": "Antalya Havalimanı Ofisi",
+  "bookCar": "Araç Kirala",
+  "pickUpOffice": "Alış Ofisi",
+  "dropOffOffice": "İade Ofisi",
+  "pickUpDate": "Alış Tarihi",
+  "dropOffDate": "İade Tarihi"
 }

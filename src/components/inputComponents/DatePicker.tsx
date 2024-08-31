@@ -29,8 +29,6 @@ export default function DatePickerFC(props: IProps) {
   const turkishLocale = trTR.components.MuiLocalizationProvider.defaultProps.localeText;
   const englishLocale = enUS.components.MuiLocalizationProvider.defaultProps.localeText;
 
-  console.log(trTR.components.MuiLocalizationProvider.defaultProps.localeText);
-  console.log(enUS.components.MuiLocalizationProvider.defaultProps.localeText);
   return (
     <LocalizationProvider
       dateAdapter={AdapterDayjs}
@@ -62,13 +60,14 @@ export default function DatePickerFC(props: IProps) {
                     backgroundColor: '#f6f8f9'
                   },
                   '& .MuiOutlinedInput-root': {
-                    height: '32px',
-                    fontSize: '12px',
+                    height: '40px',
+                    fontSize: '14px',
+                    width: '250px',
                     '&:hover fieldset': {
-                      borderColor: '#F59E0B'
+                      borderColor: '#FF7F3E'
                     },
                     '&.Mui-focused fieldset': {
-                      borderColor: '#F59E0B'
+                      borderColor: '#FF7F3E'
                     }
                   }
                 }

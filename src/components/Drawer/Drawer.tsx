@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const Drawer = ({ setDrawer }: PropsType) => {
   const { t, i18n } = useTranslation();
   return (
-    <div className="flex flex-col justify-center gap-10 ">
+    <div className="flex flex-col justify-center gap-10">
       <div
         className="cursor-pointer  flex justify-end p-5"
         onClick={() => {
