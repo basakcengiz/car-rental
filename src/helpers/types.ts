@@ -4,3 +4,9 @@ export type LinkType = {
   name: string;
   id: string;
 };
+
+export type CityType = {
+  cityName: string;
+  airportName?: string;
+  secondaryAirportName?: string;
+};

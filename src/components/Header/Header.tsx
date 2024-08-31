@@ -11,7 +11,7 @@ const Header = ({ setDrawer }: PropsType) => {
   const { t, i18n } = useTranslation();
 
   const handleChange = (event: SelectChangeEvent) => {
-    changeLanguage(event.target.value as string);
+    changeLanguage(event.target.value);
     /* if (user) {
         dispatch(
           handleUpdateUser({
@@ -21,7 +21,7 @@ const Header = ({ setDrawer }: PropsType) => {
       } */
   };
   return (
-    <header className="header fixed top-0 w-full z-[999]">
+    <header className="header fixed top-0 w-full z-[1]">
       <div className="bg-white flex h-20 justify-around items-center">
         <div className="flex">
           {/*   <img src="src//assets/carLogo.svg" alt="" /> */}
@@ -31,7 +31,7 @@ const Header = ({ setDrawer }: PropsType) => {
               navigate('/');
             }}
           >
-            RENT CAR
+            CARENTIFY
           </h1>
         </div>
 

@@ -1,5 +1,19 @@
 {
   "home": "Ana Sayfa",
   "login": "Giriş Yap",
-  "register": "Kayıt Ol"
+  "register": "Kayıt Ol",
+  "homeMsg": "Güvenli ve sorunsuz araç kiralama deneyimi, geniş araç filomuz ve uygun fiyatlarımızla sizleri bekliyor",
+  "contact": "İletişim",
+  "popularCityOffices": "Popüler Şehir Ofisleri",
+  "popularAirportOffices": "Popüler Havalimanı Ofisleri",
+  "findUs": "Bizi Bulun",
+  "istCity": "İstanbul Şehir Ofisi",
+  "ankCity": "Ankara Şehir Ofisi",
+  "izmCity": "İzmir Şehir Ofisi",
+  "antCity": "Antalya Şehir Ofisi",
+  "istAirport": "İstanbul Havalimanı Ofisi",
+  "istSabiha": "S. Gökçen Havalimanı Ofisi",
+  "ankAirport": "Ankara Havalimanı Ofisi",
+  "izmAirport": "İzmir Havalimanı Ofisi",
+  "antAirport": "Antalya Havalimanı Ofisi"
 }

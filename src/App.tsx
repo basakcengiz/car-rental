@@ -7,6 +7,9 @@ import Header from './components/Header/Header';
 import Drawer from './components/Drawer/Drawer';
 import { useState } from 'react';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
+/* import FAQ from './components/FAQ/FAQ'; */
+import BookCar from './components/BookCar/BookCar';
 
 function App() {
   const [drawer, setDrawer] = useState<boolean>(false);
@@ -15,6 +18,9 @@ function App() {
     <>
       {drawer ? <Drawer setDrawer={setDrawer} /> : <Header setDrawer={setDrawer} />}
       <Home />
+      <BookCar />
+      {/*       <FAQ /> */}
+      <Footer />
     </>
   );
 }

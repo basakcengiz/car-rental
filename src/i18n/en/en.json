@@ -1,5 +1,19 @@
 {
   "home": "home",
   "login": "login",
-  "register": "register"
+  "register": "register",
+  "homeMsg": "Comfortable and seamless car rental experience awaits you with our wide range of vehicles and competitive prices",
+  "contact": "Contact",
+  "popularCityOffices": "Popular City Offices",
+  "popularAirportOffices": "Popular Airport Offices",
+  "findUs": "Find Us",
+  "istCity": "Istanbul City Office",
+  "ankCity": "Ankara City Office",
+  "izmCity": "Izmir City Office",
+  "antCity": "Antalya City Office",
+  "istAirport": "Istanbul Airport Office",
+  "istSabiha": "Istanbul S. Gokcen Airport Office",
+  "ankAirport": "Ankara Airport Office",
+  "izmAirport": "Izmir Airport Office",
+  "antAirport": "Antalya Airport Office"
 }
