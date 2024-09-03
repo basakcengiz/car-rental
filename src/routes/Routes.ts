@@ -6,6 +6,8 @@ const AppLayout = React.lazy(() => import('../layouts/AppLayout'));
 const IndexLayout = React.lazy(() => import('../layouts/IndexLayout'));
 const Home = React.lazy(() => import('../pages/Home/Home'));
 const AvailableVehicles = React.lazy(() => import('../pages/AvailableVehicles/AvailableVehicles'));
+const Login = React.lazy(() => import('../pages/AuthPages/Login'));
+const AuthLayout = React.lazy(() => import('../layouts/AuthLayout'));
 
 export const Routes: CustomRouteProps[] = [
    {
@@ -33,6 +35,34 @@ export const Routes: CustomRouteProps[] = [
                   /*          permissions: [Role.Customer], */
                },
             ],
+         },
+      ],
+   },
+   {
+      path: '/',
+      component: AuthLayout,
+      loginRequired: false,
+      children: [
+         {
+            path: '/login',
+            component: Login,
+            loginRequired: false,
+            /*     permissions: [Role.Customer], */
+
+            /* children: [
+               {
+                  path: '/',
+                  component: Home,
+                  loginRequired: false,
+              permissions: [Role.Customer], 
+               },
+               {
+                  path: '/available-vehicles',
+                  component: AvailableVehicles,
+                  loginRequired: false,
+              permissions: [Role.Customer], 
+               },
+            ], */
          },
       ],
    },
