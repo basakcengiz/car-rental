@@ -24,5 +24,16 @@
    "pickDate": "Pick a date",
    "email": "E-Mail",
    "password": "Password",
-   "forgotPassword": "Forgot Password"
+   "passwordAgain": "Password Again",
+   "forgotPassword": "Forgot Password",
+   "mandatoryMsg": "This field is mandatory",
+   "invalidEmail": "Invalid E-Mail",
+   "minPwdMsg": "Your password must be at least 6 digits",
+   "maxPwdMsg": "Your password must have a maximum of 20 digits",
+   "rgxPwdMsg": "Your password must consist of at least one letter,one number and one special character",
+   "name": "Name",
+   "surname": "Surname",
+   "nationalId": "National ID",
+   "dateOfBirth": "Date of Birth",
+   "phone": "Phone Number"
 }

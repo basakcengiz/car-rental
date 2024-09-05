@@ -9,48 +9,49 @@ const AvailableVehicles = React.lazy(() => import('../pages/AvailableVehicles/Av
 const AuthLayout = React.lazy(() => import('../layouts/AuthLayout'));
 const Login = React.lazy(() => import('../pages/AuthPages/Login'));
 const ForgotPassword = React.lazy(() => import('../pages/AuthPages/ForgotPassword'));
+const Register = React.lazy(() => import('../pages/AuthPages/Register'));
 
 export const Routes: CustomRouteProps[] = [
-  {
-    path: '/',
-    component: AppLayout,
-    loginRequired: false,
-    children: [
-      {
-        path: '/',
-        component: IndexLayout,
-        loginRequired: false,
-        /*     permissions: [Role.Customer], */
-
-        children: [
-          {
+   {
+      path: '/',
+      component: AppLayout,
+      loginRequired: false,
+      children: [
+         {
             path: '/',
-            component: Home,
-            loginRequired: false
-            /*          permissions: [Role.Customer], */
-          },
-          {
-            path: '/available-vehicles',
-            component: AvailableVehicles,
-            loginRequired: false
-            /*          permissions: [Role.Customer], */
-          }
-        ]
-      }
-    ]
-  },
-  {
-    path: '/',
-    component: AuthLayout,
-    loginRequired: false,
-    children: [
-      {
-        path: '/login',
-        component: Login,
-        loginRequired: false
-        /*     permissions: [Role.Customer], */
+            component: IndexLayout,
+            loginRequired: false,
+            /*     permissions: [Role.Customer], */
 
-        /* children: [
+            children: [
+               {
+                  path: '/',
+                  component: Home,
+                  loginRequired: false,
+                  /*          permissions: [Role.Customer], */
+               },
+               {
+                  path: '/available-vehicles',
+                  component: AvailableVehicles,
+                  loginRequired: false,
+                  /*          permissions: [Role.Customer], */
+               },
+            ],
+         },
+      ],
+   },
+   {
+      path: '/',
+      component: AuthLayout,
+      loginRequired: false,
+      children: [
+         {
+            path: '/login',
+            component: Login,
+            loginRequired: false,
+            /*     permissions: [Role.Customer], */
+
+            /* children: [
                {
                   path: '/',
                   component: Home,
@@ -64,30 +65,19 @@ export const Routes: CustomRouteProps[] = [
               permissions: [Role.Customer], 
                },
             ], */
-      },
-      {
-        path: '/forgot-password',
-        component: ForgotPassword,
-        loginRequired: false
-        /*     permissions: [Role.Customer], */
-
-        /* children: [
-               {
-                  path: '/',
-                  component: Home,
-                  loginRequired: false,
-              permissions: [Role.Customer], 
-               },
-               {
-                  path: '/available-vehicles',
-                  component: AvailableVehicles,
-                  loginRequired: false,
-              permissions: [Role.Customer], 
-               },
-            ], */
-      }
-    ]
-  }
+         },
+         {
+            path: '/forgot-password',
+            component: ForgotPassword,
+            loginRequired: false,
+         },
+         {
+            path: '/register',
+            component: Register,
+            loginRequired: false,
+         },
+      ],
+   },
 ];
 
 export const protectedRoutes = authMiddleware(Routes);
